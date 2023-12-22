@@ -19,6 +19,7 @@
   <title>Frontend Mentor | Fylo landing page with two column layout</title>
 </head>
 <body>
+
   <header class="header">
     <a href="#" class="logo">
       <img src="images/logo.svg" alt="Fylo logo">
@@ -36,91 +37,99 @@
     <section class="top-section">
       <div class="top-section__image">
         <img src="images/illustration-1.svg" alt="">
-      </div><!-- end hero-wrapper -->
-      <div class="top-section__text">
+      </div><!-- end top-section__image -->
+      <div class="top-section__content">
         <h1 class="main-heading">All your files in one secure location, accessible anywhere.</h1>
         <p>Fylo stores your most important files in one secure location. 
           Access them wherever you need, share and collaborate with friends, 
           family, and co-workers.</p>
         <form class="main-form">
-          <input type="email" name="email" id="email" placeholder="Enter your email...">
+          <input type="email" name="email" id="main-form-email" placeholder="Enter your email...">
           <button type="submit" class="btn btn-primary">Get Started</button>
         </form><!-- end main-form -->
-      </div><!-- end top-section__text -->
+      </div><!-- end top-section__content -->
     </section><!-- end top-section -->
 
     <section class="middle-section">
       <div class="middle-section__image">
         <img src="images/illustration-2.svg" alt="">
       </div><!-- end middle-section__image -->
-      <div class="middle-section__text ">
-        <h2>Stay productive, wherever you are</h2>
+      <div class="middle-section__content">
+        <h2 class="middle-section__heading">Stay productive, wherever you are</h2>
         <p>Never let location be an issue when accessing your files. Fylo has you 
           covered for all of your file storage needs.</p>
         <p>Securely share files and folders with friends, family and colleagues for 
             live collaboration. No email attachments required!</p>
-        <a href="#">See how Fylo works
-          <img src="images/icon-arrow.svg" alt="">
-        </a>
+          <a href="#" class="arrow-link__content">See how Fylo works
+            <img src="images/icon-arrow.svg" alt="">
+          </a>
+
         <figure class="testimonial">
-          <img src="images/icon-quotes.svg" alt="">
-          <blockquote>
-            Fylo has improved our team productivity by an order of magnitude. Since 
-          making the switch our team has become a well-oiled collaboration machine.
-          </blockquote>
-          <img src="images/avatar-testimonial.jpg" alt="Headshot of Kyle Burton">
-          <figcaption>Kyle Burton
-            Founder & CEO, Huddle</figcaption>
+          <blockquote class="testimonial__content">
+            <img src="images/icon-quotes.svg" alt="">
+            <p class="testimonial__content__paragraph">Fylo has improved our team productivity by an order of magnitude. Since 
+          making the switch our team has become a well-oiled collaboration machine.</p>
+          </blockquote><!-- end testimonial__content-->
+          <figcaption class="testimonial__author">
+            <img src="images/avatar-testimonial.jpg" alt="Headshot of Kyle Burton" class="testimonial__author__image">
+            <div class="testimonial__author__text">
+              <p class="testimonial__author__name">Kyle Burton</p>
+              <p class="testimonial__author__title">Founder & CEO, Huddle</p>
+            </div><!-- end testimonial__author__text -->
+          </figcaption><!-- end testimonial__author -->
         </figure><!-- end testimonial -->   
-      </div><!-- end middle-section__text -->
+      </div><!-- end middle-section__content -->
     </section><!-- end middle-section -->
 
     <section class="bottom-section">
-      <div>
+      <div class="bottom-section__text">
         <h3>Get early access today</h3>
-        <p>It only takes a minute to sign up and our free starter tier is extremely generous. 
+        <p class="bottom-section__text__paragraph">It only takes a minute to sign up and our free starter tier is extremely generous. 
           If you have any questions, our support team would be happy to help you.</p>
-      </div>
-      <div>
-        <form class="secondary-form">
-          <input type="email" name="email" id="email" placeholder="email@example.com">
-          <button type="submit" class="btn btn-secondary">Get Started For Free</button>
-        </form><!-- end secondary--form -->
+      </div><!-- end bottom-section__text -->
+      <form class="secondary-form">
+        <input type="email" name="email" id="secondary-form-email" placeholder="email@example.com">
+        <button type="submit" class="btn btn-secondary">Get Started For Free</button>
+      </form><!-- end secondary--form -->
     </section><!-- end bottom-section -->
   </main><!-- end main -->
 
   <footer class="footer">
     <div class="footer__columns">
-            <div class="footer_column">
-              <img src="images/logo.svg" alt="">
-              <a href="#">
-                <img src="images/icon-phone.svg" alt="">
-                Phone: +1-543-123-4567
+            <div class="logo-column">
+              <a href="#" class="footer-logo">
+                  <img src="images/logo.svg" alt="Fylo logo">
               </a>
-              <a href="#">
-                <img src="images/icon-email.svg" alt="">
-                example@fylo.com
-              </a>
-            </div>
+              <div class="footer-icons">
+                  <a href="#" class="footer-icon">
+                    <img src="images/icon-phone.svg" alt="">
+                    <p>Phone: +1-543-123-4567</p>
+                  </a>
+                  <a href="#" class="footer-icon">
+                    <img src="images/icon-email.svg" alt="">
+                    <p>example@fylo.com</p>
+                  </a>
+              </div><!-- end footer__column__icons -->
+            </div><!-- end footer__column -->
 
-            <div class="footer_column">
-              <ul>
+            <div class="links-column">
+              <ul class="links-column-list">
                 <li><a href="#">About Us</a></li>
                 <li><a href="#">Jobs</a></li>
                 <li><a href="#">Press</a></li>
                 <li><a href="#">Blog</a></li>
               </ul>
-            </div>
+            </div><!-- end footer__column -->
 
-            <div class="footer_column">
-              <ul>
+            <div class="links-column">
+              <ul class="links-column-list">
                 <li><a href="#">Contact Us</a></li>
                 <li><a href="#">Terms</a></li>
                 <li><a href="#">Privacy</a></li>
               </ul>
-            </div>
+            </div><!-- end footer__column -->
 
-            <div class="footer_column">
+            <div class="social-media-column">
               <a href="#" class="facebook">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(255, 255, 255, 1);transform: ;msFilter:;">
                   <path d="M13.397 20.997v-8.196h2.765l.411-3.209h-3.176V7.548c0-.926.258-1.56 1.587-1.56h1.684V3.127A22.336 22.336 0 0 0 14.201 3c-2.444 0-4.122 1.492-4.122 4.231v2.355H7.332v3.209h2.753v8.202h3.312z"></path>
