@@ -130,7 +130,7 @@ h3 {
 #secondary-form-email {
   border: 1px solid var(--clr--desaturated-blue);
   border-radius: 3px;
-  padding: .5em 1em;
+  padding: 10px 20px;
 }
 
 /* General Styling */
@@ -153,7 +153,7 @@ body {
 
 .navbar__menu {
     display: flex;
-    gap: 1rem;
+    gap: .5rem;
 }
 
 /* TOP SECTION */
@@ -261,7 +261,7 @@ body {
   background-color: var(--clr--desaturated-blue);
   color: var(--clr--light-grayish-blue);
   text-align: center;
-  padding: 3rem;
+  padding: 4rem;
 }
 
 .bottom-section__text__paragraph {
@@ -345,9 +345,14 @@ body {
 }
 
 
+
 /* MEDIA QUERIES */
 
 @media(min-width: 50rem) {
+  /* HEADER */
+  .navbar__menu {
+    gap: 1.5rem;
+}
   /* TOP SECTION */
   .top-section {
     grid-template-columns: repeat(2, 1fr);
@@ -394,6 +399,7 @@ body {
   .bottom-section {
     grid-template-columns: repeat(2, 1fr);
     gap: 5rem;
+    padding-inline: 3rem 6rem;
   }
   .bottom-section__text {
     text-align: left;
